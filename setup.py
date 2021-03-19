@@ -1,13 +1,13 @@
 from setuptools import setup
 
-setup(name='tctct',
+setup(name='sithcon',
       version='0.1',
-      description='TCTCT: Temporal Convolutions Through Compressed Time',
-      url='https://github.com/beegica/TCTCT',
+      description='SithCon: Temporal Convolutions Through Compressed Time',
+      url='https://github.com/compmem/SITHCon',
       license='Free for non-commercial use',
       author='Computational Memory Lab',
       author_email='bgj5hk@virginia.edu',
-      packages=['tctct'],
+      packages=['sithcon'],
       install_requires=[
           'torch>=1.1.0',
           
