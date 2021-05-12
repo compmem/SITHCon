@@ -10,6 +10,5 @@ setup(name='sithcon',
       packages=['sithcon'],
       install_requires=[
           'torch>=1.1.0',
-          
       ],
       zip_safe=False)
