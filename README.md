@@ -133,4 +133,8 @@ Initializing SITH will generate several attributes that depend heavily on the va
 
 In the `experiments` folder are the experiments that were included in the paper. Everything to recreate the results therein is included. Everything is in jupyter notebooks. We have also included everything needed to recreate the figures from the paper, but with your results if you change file names around. 
 
+It should be noted that there are 3 main experiments that the SITHCon model was tested on. We examined AudioMNIST, a timeseries classification dataset, MorseAdding, as task introduced by us that forces networks to classify morse code digits and add values associated with them together while ignoring distractor items, and finally MorseDecoder, which is a simpler time-series classification task than AudioMNIST, as there is no noise associated with these data, they are just morse code digits extended by repeating each bit of information many times. 
+
+In all three of these tasks we show exceptional performance with SITHCon, but we also show that SITHCon is able to maintain its level of performance on different time-scaling of the items without retraining.  
+
 
