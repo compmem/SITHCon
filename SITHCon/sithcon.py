@@ -8,10 +8,10 @@ from torch.nn.utils import weight_norm
 
 from .isith import iSITH
 
-class _TCTCT_Core(nn.Module):
+class _SITHCon_Core(nn.Module):
     """"""
     def __init__(self, layer_params):
-        super(_TCTCT_Core, self).__init__()
+        super(_SITHCon_Core, self).__init__()
         self.in_features = layer_params.pop('in_features', None)
         self.channels = layer_params.pop('channels', 5)
         self.kernel_width = layer_params.pop('kernel_width', 5)
@@ -51,14 +51,14 @@ class _TCTCT_Core(nn.Module):
         return x
 
     
-class TCTCT_Layer(nn.Module):
+class SITHCon_Layer(nn.Module):
     """"""
     def __init__(self, layer_params, act_func=None, 
                  dropout=.2, batch_norm = True):
 
-        super(TCTCT_Layer, self).__init__()
+        super(SITHCon_Layer, self).__init__()
         
-        self.tctct = _TCTCT_Core(layer_params)
+        self.tctct = _SITHCon_Core(layer_params)
         
         if act_func:
             self.act_func = act_func()
